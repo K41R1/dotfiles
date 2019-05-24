@@ -33,4 +33,19 @@ case $SHELL in
     ;;
 esac
 
-# TODO: generate ssh keys and test connection
+echo -ne "want to generate ssh keys (y/n)\n";
+read -r RES;
+echo $RES
+if [[ $RES -eq "yes" -o $RES -eq "y" ]]; then
+  echo -ne "generating keys ~/.ssh/id_rsa.pub \n";
+  ssh-keygen -t rsa -b 1024 -C "Hadoop Keys"
+  echo -ne "set password-less remote login \n"
+  cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_hosts
+  echo -ne "test connection ...\n"
+  ssh -o ConnectTimeout=1 localhost 'exit'
+  if [[ $? -eq 0 ]]; then
+    echo -ne "everything is fine ...\n"
+  else
+    echo -ne "something went wrong ... \n"
+  fi
+fi

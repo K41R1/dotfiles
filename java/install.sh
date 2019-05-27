@@ -15,9 +15,11 @@ read -r version
 pushd /tmp
 case version in
   1)
+  JDK_ARCHIVE='jdk-8.tar.gz'
   wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" $JDK8_URL -O $JDK_ARCHIVE
     ;;
   2)
+  JDK_ARCHIVE='jdk-12.tar.gz'
   wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" $JDK12_URL -O $JDK_ARCHIVE
     ;;
   *)
@@ -51,4 +53,4 @@ case $SHELL in
     echo -ne "\n\n export PATH=$PATH:$INSTALL_DIR/jdk " >> $HOME/.bashrc
     ;;
 esac
-# TODO: try to generalize installation
+popd

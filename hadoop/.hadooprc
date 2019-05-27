@@ -1,3 +1,4 @@
+#!/bin/sh
 export HADOOP_HOME=$HOME/opt/hadoop
 export HADOOP_CONF_DIR=$HOME/opt/hadoop/etc/hadoop
 export HADOOP_MAPRED_DIR=$HOME/opt/hadoop

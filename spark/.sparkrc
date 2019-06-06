@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export SPARK_HOME=/opt/spark-2.4.0
+export SPARK_HOME=$HOME/apache/spark
 export PATH="$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin"
 
 
@@ -8,5 +8,5 @@ export PATH="$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin"
 export PYSPARK_PYTHON='python3'
 export PYSPARK_DRIVER_PYTHON='ipython3'
 
-
+# spark version
 export SPARK_VERSION=2.4.0

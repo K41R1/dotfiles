@@ -1,7 +1,7 @@
 #!/bin/sh
 
-SPARK_URL=https://archive.apache.org/dist/spark/spark-2.4.3/spark-2.4.3-bin-without-hadoop.tgz
-SPARK_ARCHIVE=spark-2.4.3-bin-without-hadoop.tgz
+SPARK_URL=https://www-eu.apache.org/dist/spark/spark-2.4.3/spark-2.4.3-bin-hadoop2.7.tgz
+SPARK_ARCHIVE=spark-2.4.3-bin-hadoop2.7.tgz
 SPARK_INSTALL_DIR=$HOME/apache
 TMP_DIR=/tmp
 

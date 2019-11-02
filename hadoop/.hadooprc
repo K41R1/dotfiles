@@ -1,8 +1,0 @@
-#!/bin/sh
-export HADOOP_HOME=$HOME/apache/hadoop
-export HADOOP_CONF_DIR=$HOME/apache/hadoop/etc/hadoop
-export HADOOP_MAPRED_DIR=$HOME/apache/hadoop
-export HADOOP_HDFS_DIR=$HOME/apache/hadoop
-export YARN_HOME=$HOME/apache/hadoop
-export PATH=$PATH:$HADOOP_HOME/bin
-export PATH=$PATH:$HADOOP_HOME/sbin

@@ -46,3 +46,4 @@ else
 export ARCHFLAGS="-arch x86_64"
 
 alias zshconfig="vim ~/.zshrc"
+alias diff='diff color'

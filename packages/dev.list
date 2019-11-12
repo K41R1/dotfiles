@@ -5,3 +5,5 @@ code
 docker
 docker-compose
 postman
+php
+composer
